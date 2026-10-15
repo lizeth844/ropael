@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIÈRE Couture | Colección</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">LUMIÈRE <span>Couture</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="portafolio.html" class="active">Colección</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contactanos.html">Contáctanos</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Colección Exclusiva</h1>
+    <p>Filtra según la ocasión y descubre la sofisticación de nuestros diseños.</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      
+      <!-- Filtros interactivos -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">Todas las Piezas</button>
+        <button class="filter-btn" data-filter="gala">Vestidos de Gala</button>
+        <button class="filter-btn" data-filter="sastreria">Sastrería Masculina</button>
+        <button class="filter-btn" data-filter="accesorios">Accesorios & Pieles</button>
+      </div>
+
+      <!-- Grid de Productos -->
+      <div class="grid grid-3">
+        
+        <div class="card portfolio-item gala">
+          <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=600&q=80" alt="Vestido de Gala Seda">
+          <div class="card-body">
+            <h3>Vestido "Étoile" en Seda</h3>
+            <p>Vestido largo con corte sirena, escote en V e incrustaciones en cristal.</p>
+            <span class="price">$2,400.00</span>
+          </div>
+        </div>
+
+        <div class="card portfolio-item sastreria">
+          <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=600&q=80" alt="Smoking de Gala">
+          <div class="card-body">
+            <h3>Smoking "Imperial" Solapa Satén</h3>
+            <p>Traje de etiqueta de lana super fine con solapa de seda y botones enjoyados.</p>
+            <span class="price">$1,850.00</span>
+          </div>
+        </div>
+
+        <div class="card portfolio-item gala">
+          <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=600&q=80" alt="Vestido Cocktail">
+          <div class="card-body">
+            <h3>Vestido Cocktail "Velours"</h3>
+            <p>Confeccionado en terciopelo profundo con mangas drapeadas a mano.</p>
+            <span class="price">$1,200.00</span>
+          </div>
+        </div>
+
+        <div class="card portfolio-item sastreria">
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80" alt="Saco Blazer Exclusivo">
+          <div class="card-body">
+            <h3>Blazer "Monarque" en Cashmere</h3>
+            <p>Saco estructurado doble abotonadura tejido en fibras pura cashmere.</p>
+            <span class="price">$1,450.00</span>
+          </div>
+        </div>
+
+        <div class="card portfolio-item accesorios">
+          <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Bolso de Mano Elegante">
+          <div class="card-body">
+            <h3>Clutch "Lumière" de Noche</h3>
+            <p>Bolso de mano de cuero italiano con broche bañando en oro de 18k.</p>
+            <span class="price">$950.00</span>
+          </div>
+        </div>
+
+        <div class="card portfolio-item accesorios">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80" alt="Reloj Elegante">
+          <div class="card-body">
+            <h3>Reloj Edición "Cronos Gold"</h3>
+            <p>Pieza de alta relojería Suiza con correa en piel de caimán artesanal.</p>
+            <span class="price">$3,100.00</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>LUMIÈRE <span>Couture</span></h3>
+        <p>Definiendo los estándares del lujo, el buen gusto y la sofisticación contemporánea.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Atención Presencial</h4>
+        <p>Lun - Sáb: 10:00 AM - 8:00 PM</p>
+        <p>Citas VIP Domingos disponibles</p>
+      </div>
+      <div class="footer-col">
+        <h4>Atelier Principal</h4>
+        <p>Bulevar de la Moda #88-12, Distrito de Lujo</p>
+        <p>Tel: +57 (601) 555-8899</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LUMIÈRE Couture. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

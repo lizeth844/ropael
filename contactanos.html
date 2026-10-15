@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIÈRE Couture | Reservas y Citas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">LUMIÈRE <span>Couture</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="portafolio.html">Colección</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contactanos.html" class="active">Contáctanos</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Citas & Atención Personalizada</h1>
+    <p>Agende una visita privada en nuestro Atelier o envíenos sus requerimientos.</p>
+  </header>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      
+      <!-- Formulario de Reserva -->
+      <div style="background: var(--dark-secondary); padding: 2.5rem; border-radius: 8px; border: 1px solid rgba(212, 175, 55, 0.2);">
+        <h2 style="font-family: 'Cinzel', serif; color: var(--gold); margin-bottom: 1.5rem;">Solicitud de Cita</h2>
+        
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" class="form-control" required placeholder="Ej. Doña Sofía de Córdoba">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" class="form-control" required placeholder="cliente@ejemplo.com">
+          </div>
+
+          <div class="grid grid-2" style="gap: 1rem;">
+            <div class="form-group">
+              <label for="fecha">Fecha Sugerida</label>
+              <input type="date" id="fecha" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio Requerido</label>
+              <select id="servicio" class="form-control" required>
+                <option value="Sastrería Bespoke">Sastrería Bespoke</option>
+                <option value="Vestido de Gala / Noche">Vestido de Gala / Noche</option>
+                <option value="Atelier Nupcial">Atelier Nupcial</option>
+                <option value="Asesoría de Imagen VIP">Asesoría de Imagen VIP</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Notas Adicionales o Requerimientos</label>
+            <textarea id="mensaje" class="form-control" rows="4" placeholder="Escriba los detalles de su evento u ocasión..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Solicitar Cita Privada</button>
+        </form>
+      </div>
+
+      <!-- Información de Contacto Directo -->
+      <div>
+        <h2 style="font-family: 'Cinzel', serif; color: var(--gold); margin-bottom: 1.5rem;">Atelier & Concierge</h2>
+        <p style="margin-bottom: 1.5rem;">Atendemos con los más altos estándares de privacidad. Contamos con estacionamiento reservado y Valet Parking VIP.</p>
+        
+        <div style="margin-bottom: 2rem; line-height: 2;">
+          <p>📍 <strong>Dirección:</strong> Bulevar de la Moda #88-12, Distrito de Lujo</p>
+          <p>📞 <strong>Línea Privada:</strong> +57 (601) 555-8899 / +57 311 000 9988</p>
+          <p>✉️ <strong>Concierge:</strong> vip@lumierecouture.com</p>
+          <p>⏰ <strong>Horarios:</strong> Lunes a Sábado de 10:00 AM a 8:00 PM</p>
+        </div>
+
+        <div style="width: 100%; height: 230px; background: #141416; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gold); color: var(--text-muted);">
+          📍 [Ubicación Interactiva de Google Maps]
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal emergente -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <h3>¡Cita Solicitada con Éxito! 🥂</h3>
+      <p id="modalMessage">Nuestro equipo Concierge se pondrá en contacto con usted en breve para confirmar los detalles.</p>
+      <button class="btn btn-primary" onclick="closeModal()" style="margin-top: 1.5rem;">Aceptar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>LUMIÈRE <span>Couture</span></h3>
+        <p>Definiendo los estándares del lujo, el buen gusto y la sofisticación contemporánea.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Atención Presencial</h4>
+        <p>Lun - Sáb: 10:00 AM - 8:00 PM</p>
+        <p>Citas VIP Domingos disponibles</p>
+      </div>
+      <div class="footer-col">
+        <h4>Atelier Principal</h4>
+        <p>Bulevar de la Moda #88-12, Distrito de Lujo</p>
+        <p>Tel: +57 (601) 555-8899</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 LUMIÈRE Couture. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
